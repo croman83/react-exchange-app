@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "globals": {
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "jest"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "airbnb-typescript",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react",
+    "plugin:jest/recommended"
+  ],
+  "env": {
+    "jest": true,
+    "jest/globals": true
+  },
+  "rules": {
+    // Make prettier code formatting suggestions more verbose.
+    "prettier/prettier": [0],
+    // Disable <Fragment> => <> replacement. Feel free to change
+    "react/jsx-fragments": "off",
+    // Disable prefer default export
+    "import/prefer-default-export": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "env": {
+        "jest": true
+      },
+      "plugins": ["jest"],
+      "parserOptions": {
+        "ecmaVersion": 12,
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ]
+}
