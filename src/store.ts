@@ -1,9 +1,11 @@
 import { combineReducers, createStore } from 'redux'
 import { devToolsEnhancer } from 'redux-devtools-extension'
 import { UserReducer } from './features/user';
+import { AccountReducer } from "./features/accounts";
 
 const rootReducer = combineReducers({
-  user: UserReducer
+  user: UserReducer,
+  accounts: AccountReducer
 })
 
 const store = createStore(

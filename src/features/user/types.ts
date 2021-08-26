@@ -8,6 +8,7 @@ export type UserActionTypes = SetUserAction
 
 export interface SystemState {
   user: {
-    name: string
+    name: string,
+    id: number
   }
 }

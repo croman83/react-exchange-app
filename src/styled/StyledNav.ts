@@ -18,7 +18,7 @@ export const StyledNav = styled.nav`
     height: 60px;
     flex-direction: column;
     padding: 10px;
-    color: dimgray;
+    color: ${props => props.theme.color.gray};
     text-decoration: none;
     font-size: 1rem;
     border-top: 5px solid transparent;

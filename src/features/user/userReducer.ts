@@ -2,7 +2,7 @@ import { SET_USER } from './actionTypes'
 import { UserActionTypes } from './types'
 
 const initialState = {
-  name: 'Roman'
+  name: undefined
 }
 
 export default (state = initialState, action: UserActionTypes) => {

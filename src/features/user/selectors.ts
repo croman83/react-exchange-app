@@ -1,3 +1,3 @@
-import { SystemState } from './types'
+import { RootStateOrAny } from "react-redux";
 
-export const getUserName = (state: SystemState) => state.user.name
+export const getUserName = (state: RootStateOrAny) => state.user.name
